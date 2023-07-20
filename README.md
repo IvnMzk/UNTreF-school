@@ -1,2 +1,0 @@
-# UNTreF-school
-Proyecto Integrador 
