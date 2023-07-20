@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+        name="description"
+        content="Formulario de contacto UntrefSchool (Proyecto Integrador)"
+        />
+        <meta name="author" content="Mazurek, Ivan" />
+        <title>Escuela Primaria UntrefSchool - Contacto</title>
+        <link rel="icon" type="image/x-icon" href="img/fav.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="https://kit.fontawesome.com/9192f6f463.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <div class="logo">
+                        <img
+                            src="../img/logo.png"
+                            alt="Logo UNTreF escuela"
+                        />
+                    </div></a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html#about">Quienes somos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#choose">¿Por qué elegirnos?</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#prop">Propuesta educativa</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#news">Últimas noticias</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <main>
+                <div class="main-container">
+                    <div class="form-container">
+                        <form action="#" method="POST">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" maxlength="50" required>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Ingresa tu email" maxlength="50" required>
+                            <label for="phone">Número telefónico:</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Ingresa tu número telefónico" maxlength="25" required>
+                            <label for="comment">Deja tu comentario:</label>
+                            <textarea name="comment" id="comment" placeholder="Deja tu comentario" cols="30" rows="10" required></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                        <p>Campos con <span id="asterisco">*</span> requeridos</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="footer-container">
+                    <div class="rs">
+                        <h2>Siguenos!</h2>
+                        <div class="rs-container">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <img
+                            src="../img/logo.png"
+                            alt="Logo UNTreF escuela"
+                        />
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380.737350564801!2d-58.56415430103204!3d-34.605037373462466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9fecc11a633%3A0xe8b000fd425d39c0!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20(UNTREF)%20-%20Sede%20Caseros%20II!5e0!3m2!1ses-419!2sar!4v1689341229298!5m2!1ses-419!2sar"></iframe>
+                    </div>
+                    <div class="contact">
+                        <h2>Contacto</h2>
+                        <div class="contact-details">
+                            <div class="contact-info">
+                                <div class="contact-icon">
+                                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact-unit">
+                                    <p>2130 Fulton Street,</p>
+                                    <p>San Diego, CA 94117-1080 USA</p>
+                                </div>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact-unit">
+                                    <p>1-800-1234-567</p>
+                                    <p>1-800-9876-098</p>
+                                </div>
+                            </div>
+                            <div class="contact-info">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-unit">
+                                    <p>info@demolink.org</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="copy">
+                    <p>&copy; 2023 Ivan Mazurek</p>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+<!-- <a href="https://www.flaticon.es/iconos-gratis/estudiar" title="estudiar iconos">Estudiar iconos creados por Dreamstale - Flaticon</a> -->
