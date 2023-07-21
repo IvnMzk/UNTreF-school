@@ -143,6 +143,42 @@ CUERPO
     flex-direction: column;
     align-items: center;
 }
+/*CARRUSEL*/
+.c-item{
+    height: 15rem;
+    min-width: 95vw;
+    text-align: center;
+}
+.c-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+.carousel .carousel-indicators button {
+    background-color: var(--color2);
+}
+.carousel .carousel-indicators button.active {
+    background-color: var(--title-color);
+}
+.carousel-control-next-icon {
+    background-image: url("../img/siguiente-boton.png");
+}
+.carousel-control-prev-icon {
+    background-image: url("../img/anterior-boton.png");
+}
+.carousel-caption{
+    top: 4rem;
+}
+.carousel-title{
+    font-family: var(--title-font);
+    color: var(--color4);
+}
+.carousel-text{
+    display: none;
+}
+
+
 main{
     background-color: var(--primary-color);
     border: 1px solid var(--bg-color);
@@ -197,6 +233,14 @@ BORRAR
     .buttons{
         margin: 1rem;
     }
+    .btn-contact, #btn-send{
+        color: var(--primary-color);
+        --bs-btn-bg: var(--bg-color);
+        border: 1px solid var(--bg-color);
+    }
+    #btn-close{
+        border: 1px solid black;
+    }
         .container-prop{
             max-width: 600px;
             display: flex;
@@ -220,31 +264,7 @@ BORRAR
         display: flex;
         flex-direction: column;
     } */
-    /*CARRUSEL*/
-    .c-item{
-        height: 15rem;
-        min-width: 95vw;
-        text-align: center;
-    }
-    .c-img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        margin: auto;
-
-    }
-    .carousel .carousel-indicators button {
-        background-color: var(--color2);
-    }
-    .carousel .carousel-indicators button.active {
-        background-color: var(--title-color);
-    }
-    .carousel-control-next-icon {
-        background-image: url("../img/siguiente-boton.png");
-    }
-    .carousel-control-prev-icon {
-        background-image: url("../img/anterior-boton.png");
-    }
+    
 
 footer{
     background-color: var(--color2);
@@ -366,6 +386,13 @@ textarea:focus {
         max-width: 1180px;
         width: 80vw;
     }
+    .carousel-title{
+        font-size: 2rem;
+    }
+    .carousel-text{
+        display: initial;
+        font-size: 1.5rem;
+    }
     .footer-container {
         display: flex;
         align-items: center;
@@ -394,9 +421,17 @@ textarea:focus {
 }
 
 @media (min-width: 1024px){
+    .carousel-caption{
+        top: 30%;
+    }
+    .carousel-title{
+        font-size: 3rem;
+    }
+    .carousel-text{
+        font-size: 2rem;
+    }
     .main-content{
         flex-direction: row;
-
     }
     .main-content-text{
         padding: 2rem;
