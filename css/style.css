@@ -73,6 +73,7 @@ CUERPO
     display: flex;
 }
 .navbar{
+    z-index: 5;
     background-color: var(--color2);
     /* color: var(--primary-color); */
     position: sticky;
@@ -130,7 +131,7 @@ CUERPO
         background-position: center; */
         padding: 0.5rem;
         margin: 0.25rem;
-        height: 15rem;
+        /* height: 15rem; */
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -188,6 +189,14 @@ BORRAR
     .main-content li::before {
         content: url("../img/libro-li.png");
     }
+
+    .modal-body{
+        /* flex-wrap: nowrap; */
+        justify-content: center;
+    }
+    .buttons{
+        margin: 1rem;
+    }
         .container-prop{
             max-width: 600px;
             display: flex;
@@ -212,22 +221,30 @@ BORRAR
         flex-direction: column;
     } */
     /*CARRUSEL*/
-    /* .carousel-item{
-            height: 200px;
-            width: 200px;
+    .c-item{
+        height: 15rem;
+        min-width: 95vw;
+        text-align: center;
     }
-        .carousel .carousel-indicators button {
-            background-color: var(--color2);
-        }
-        .carousel .carousel-indicators button.active {
-            background-color: var(--title-color);
-        }
-        .carousel-control-next-icon {
-            background-image: url("../img/siguiente-boton.png");
-        }
-        .carousel-control-prev-icon {
-            background-image: url("../img/anterior-boton.png");
-        }          */
+    .c-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin: auto;
+
+    }
+    .carousel .carousel-indicators button {
+        background-color: var(--color2);
+    }
+    .carousel .carousel-indicators button.active {
+        background-color: var(--title-color);
+    }
+    .carousel-control-next-icon {
+        background-image: url("../img/siguiente-boton.png");
+    }
+    .carousel-control-prev-icon {
+        background-image: url("../img/anterior-boton.png");
+    }
 
 footer{
     background-color: var(--color2);
@@ -344,6 +361,11 @@ textarea:focus {
     #prop{
         max-width: inherit;
     }
+    .c-item{
+        height: 25rem;
+        max-width: 1180px;
+        width: 80vw;
+    }
     .footer-container {
         display: flex;
         align-items: center;
@@ -390,10 +412,14 @@ textarea:focus {
         object-fit: none;
         object-position: right;  
         }
+        .c-item{
+            height: 45rem;
+        }
 }
 
 @media (min-width: 1440px) {
-    .secondary-content{
+    /* .secondary-content{
         display: flex;
-    }
+    } */
+    
 }
