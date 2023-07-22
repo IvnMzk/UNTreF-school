@@ -378,6 +378,7 @@ textarea:focus {
 @media (min-width: 768px) {
     .navbar-expand-md .navbar-nav .nav-link{
         padding: .25rem;
+        font-size: 1rem;
     }
     .header-container, .main-container, .footer-container{
         max-width: 1180px;
